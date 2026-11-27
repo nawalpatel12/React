@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; 
+  
 }
 
 .Parent {
+
  width: 100%;
  flex-wrap: wrap;
  background-color: black;
@@ -12,7 +14,7 @@
  font-family: sans-serif;
  display: flex;
  gap: 30px ;
- color: white;
+ 
 }
 
 .card {
@@ -57,7 +59,7 @@
 
 .center h3 {
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .center h3 span {

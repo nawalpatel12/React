@@ -1,22 +1,28 @@
 import React from "react";
+import { Barcode } from "lucide-react";
 
-const Card = ( props ) => {
+const Card = (props) => {
+  console.log(props.name);
+
   return (
     <div className="card">
-      <h2>Dit University</h2>
+      <h3>{props.schoolname}</h3>
 
-      <img src={props.img} alt="img" />
-      <h1>{props.user}</h1>
+      <img src={props.image} alt={props.name} />
+
+      <h2>{props.name}</h2>
 
       <div className="detail">
-        <div>Program:-B.Tech CSE</div>
-        <div>Roll No:-220102876</div>
-        <div>Address:-Mussorie Road, Makkawala</div>
+        <p>Class: {props.class}</p>
+        <p>Roll No: {props.rollNo}</p>
+        <p>Contact: {props.contactNo}</p>
+        <p>Address: {props.address}</p>
       </div>
 
-      <button>View Profile</button>
+      <div className="card-barcode">
+        <Barcode className="card-barcode-icon" preserveAspectRatio="none" />
+      </div>
     </div>
   );
 };
-
 export default Card;
